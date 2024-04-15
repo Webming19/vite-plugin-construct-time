@@ -21,7 +21,7 @@ import { constructTimePlugin } from 'vite-plugin-construct-time';
 export default defineConfig(({ mode }) => ({
   // ...其他配置
   plugins: [
-    // 获取本次构建的时间，默认不传参仅production环境，传入vite参数表示任何构建环境
+    // 获取本次构建的时间，默认不传参仅production环境，传入mode参数表示任何构建环境
     constructTimePlugin([mode]),
   ],
 }));

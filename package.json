@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-construct-time",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "记录本次构建的时间",
   "scripts": {
     "dev": "vite --host",

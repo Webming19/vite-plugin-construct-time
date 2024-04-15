@@ -1,0 +1,42 @@
+{
+  "name": "vite-plugin-construct-time",
+  "version": "0.0.1",
+  "description": "记录本次构建的时间",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "tsc && vite build"
+  },
+  "files": ["dist"],
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Webming19/vite-plugin-construct-time"
+  },
+  "keywords": [
+    "vite",
+    "vite-plugin",
+    "construct",
+    "time"
+  ],
+  "bugs": {
+    "url": "https://github.com/Webming19/vite-plugin-construct-time/issues"
+  },
+  "homepage": "https://github.com/Webming19/vite-plugin-construct-time",
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.8",
+    "vite-plugin-dts": "^3.8.2"
+  },
+  "author": "EthanHan (https://github.com/Webming19)",
+  "license": "MIT"
+}

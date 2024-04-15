@@ -2,6 +2,8 @@
 
 vite插件，记录下本次构建的时间并用于开发环境/生产环境
 
+> 请注意，为了适应未来vite移除CommonJS支持，插件仅适用于ES6的Module，不适用于CommonJS
+
 ## 安装
 
 推荐使用`pnpm`下载，`npm`/`yarn`都可以

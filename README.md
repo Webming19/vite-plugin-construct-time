@@ -11,7 +11,7 @@ pnpm install vite-plugin-construct-time --save-dev
 ```
 
 ## 用法
-
+### 记录构建时间
 ```js
 // vite.config.js
 import { defineConfig } from 'vite';
@@ -28,11 +28,23 @@ export default defineConfig(({ mode }) => ({
 // ...
 ```
 
+### 获取构建时间
 ```vue
 <!-- src/App.vue -->
 <script>
 import { getConstructTime } from 'vite-plugin-construct-time';
 
-console.log('Construct Time: ', getConstructTime());
+const options = {
+  year: 'numeric',
+  month: '2-digit',
+  day: '2-digit',
+  hour: '2-digit',
+  minute: '2-digit',
+  second: '2-digit',
+  hour12: false,
+};
+const constructTime = new Intl.DateTimeFormat('zh-CN', options).format(getConstructTime());
+
+console.log('Construct Time: ', constructTime);
 </script>
 ```
